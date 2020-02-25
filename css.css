@@ -1,0 +1,409 @@
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Berthold';
+  src: url(Berthold-akzidenz-grotesk-be-light.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+header {
+    height: 100%;
+    width: 100%;
+}
+
+.result {
+    color: white;
+    font-size: 15px;
+    position:absolute;
+    z-index: 10;
+    margin: 30px;
+    left: 18px;
+
+}
+
+.background {
+    width: 100%;
+    max-height: 100vh;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+    filter: brightness(60%);
+}
+
+.persian {
+    position: absolute;
+    width: 50%;
+    z-index: 2;
+    right: 0%;
+    bottom: 0%;
+    top: 16%;
+}
+
+.motto {
+    position: absolute;
+    text-align: left;
+    left: 25%;
+    top: 31%;
+    z-index: 3;
+    font: 28px 'Berthold';
+    color: #fff;
+    animation-name: title_animation;
+    animation-duration: 8s;
+}
+
+@keyframes title_animation {
+  from {opacity: 0%;}
+  to {opacity: 100%;}
+}
+
+.name {
+     font: 160% 'Berthold';
+    margin-top: 15px;
+}
+
+.logo {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    right: 50%;
+    top: 80%;
+    z-index: 3;
+    color: #fff;
+    width: 3%;
+    margin-left: -0.75%;
+
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
+      }
+
+
+.second {
+    height: 100vh;
+    width: 100%;
+    background-color: #C7C4C4;
+    padding: 10%;
+}
+
+.subtitle {
+    margin-left: 3.8%;
+    font: 25px 'Berthold' bold;
+}
+.note_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.text_box {
+    font: 19px 'Berthold';
+    line-height: 2;
+    width: 35%;
+    margin: auto;
+}
+
+.third {
+    height: 100vh;
+}
+
+.fourth {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.gif {
+    width: 800px;
+
+}
+
+.gif_box {
+    margin: 100px 50px 100px 0px;
+
+}
+
+.article_box {
+    width: 42%;
+    font: 19px 'Berthold';
+    line-height: 1.5;
+    margin-top: 40px;
+}
+
+.fifth {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.background_red {
+    width: 100%;
+    max-height: 120vh;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+    position: relative;
+}
+
+box {
+    position: absolute;
+    background-color: #fff;
+    z-index: 2;
+    border: 8px solid white;
+}
+
+.text {
+    margin: 5%;
+}
+
+.picture_box_1 {
+    width: 450px;
+    height: 350px;
+    margin-left: 12%;;
+    margin-top: 10%;
+    box-shadow: 0 5px 10px rgba(0,0,0,.8);
+}
+
+
+.picture_box_2 {
+    width: 450px;
+    height: 350px;
+    margin-left: 24%;
+    margin-top: 28%;
+    box-shadow: 0 5px 10px rgba(0,0,0,.8);
+}
+
+.picture_box_3 {
+    width: 450px;
+    height: 350px;
+    margin-left: 43%;
+    margin-top: 14%;
+    box-shadow: 0 5px 10px rgba(0,0,0,.8);
+}
+
+.picture_box_4 {
+    width: 400px;
+    height: 500px;
+    margin-left: 74%;
+    margin-top: 10%;
+    box-shadow: 0 5px 10px rgba(0,0,0,.8);
+}
+
+.pictures {
+    width: 100%;
+}
+
+.sixth {
+    width: 100%;
+    padding: 8% 10% 5% 10%;
+    height: 100vh;
+    margin: auto;
+    background-color: #C7C4C4;
+}
+
+.sixth_section {
+    width: 50%;
+    margin: auto;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 12ppx;
+    margin-bottom: 50px;
+    resize: vertical;
+    font: 17px 'Berthold';
+}
+
+input[type=submit] {
+    background-color: #991b1e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #781518;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+footer {
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: #991b1e;
+    color: #fff;
+    font: 20px 'Berthold';
+    line-height: 1.25;
+}
+
+#myvideo {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.red_1{
+    background-color: #991b1e;
+    position: absolute;
+    z-index: 2;
+    transform: translate(0px, -150%);
+    height: 200px;
+    width: 700px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 20px 'Berthold';
+}
+
+.red_2{
+    background-color: #991b1e;
+    position: absolute;
+    z-index: 2;
+    transform: translate(150%, -50%);
+    height: 200px;
+    width: 40%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: 20px 'Berthold';
+}
+
+.contact_us_text {
+    margin-bottom: 50px;
+    font: 20px 'Berthold' bold;
+}
+
+.social_media_icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px;
+    padding: 0 0;
+    color: white;
+}
+
+.social_media_icons a:link {
+        color: white;
+    }
+
+.social_media_icons a:visited {
+        color: grey;
+    }
+
+
+
+
+
+
+
+nav {
+    position: absolute;
+    z-index: 3;
+    font-size: 15px;
+}
+
+
+.sidebar {
+  position: fixed;
+  width: 13%;
+  z-index: 3;
+  height: 100vh;
+  font-size: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav {
+  position: relative;
+  text-align: left;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  left: 20%;
+}
+
+.nav ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+a {
+      line-height: 3em;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.2em;
+      color: white;
+      display: block;
+      transition: all ease-out 300ms;
+    }
+
+.nav a.active {
+    color: #000;
+    background: rgba(255,255,255,0.9);
+}
+
+a:hover {
+    color: darkgrey;
+    left: 5px;
+}
+
+.line {
+    height: 1000px;
+    width: 3px;
+    margin-left: 10%;
+    margin-top: 0px;
+    position: absolute;
+}
+
+
+
+
+
