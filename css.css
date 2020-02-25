@@ -120,10 +120,20 @@ header {
     padding: 10%;
 }
 
-.subtitle {
-    margin-left: 3.8%;
-    font: 25px 'Berthold' bold;
+.test {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    right: 5%;
 }
+
+.subtitle {
+    margin-left: 2.5%;
+    font: 25px 'Berthold' bold;
+    margin-bottom: 15px;
+}
+
 .note_container {
     display: flex;
     flex-direction: row;
@@ -132,18 +142,37 @@ header {
 .text_box {
     font: 19px 'Berthold';
     line-height: 2;
-    width: 35%;
-    margin: auto;
+    width: 40%;
+    margin: 0 auto ;
 }
 
 .third {
     height: 100vh;
 }
 
+.three_half {
+    height: 100vh;
+    width: 100%;
+    padding: 4% 15%;
+    background-color: #C7C4C4;
+}
+
+.facts {
+    font: 35px 'Berthold';
+
+    margin-bottom: 20px;
+    }
+
+.info {
+    font: 18px 'Berthold';
+    line-height: 1.5;
+}
+
 .fourth {
     height: 100vh;
     display: flex;
     flex-direction: row;
+    padding: 100px 0;
 }
 
 .gif {
@@ -152,15 +181,19 @@ header {
 }
 
 .gif_box {
-    margin: 100px 50px 100px 0px;
+    margin: 70px 50px 100px 0px;
 
 }
 
 .article_box {
     width: 42%;
-    font: 19px 'Berthold';
+    font: 17px 'Berthold';
     line-height: 1.5;
-    margin-top: 40px;
+}
+
+.carpets_prod_text {
+    margin-bottom: 20px;
+    font-size: 28px;
 }
 
 .fifth {
@@ -216,9 +249,9 @@ box {
 
 .picture_box_4 {
     width: 400px;
-    height: 500px;
-    margin-left: 74%;
-    margin-top: 10%;
+    height: 380px;
+    margin-left: 68%;
+    margin-top: 25%;
     box-shadow: 0 5px 10px rgba(0,0,0,.8);
 }
 
@@ -284,7 +317,7 @@ footer {
 
 #myvideo {
     width: 100%;
-    height: 700px;
+    height: 100vh;
     object-fit: cover;
 }
 
@@ -292,7 +325,7 @@ footer {
     background-color: #991b1e;
     position: absolute;
     z-index: 2;
-    transform: translate(0px, -150%);
+    transform: translate(0px, -100%);
     height: 200px;
     width: 700px;
     color: #fff;
@@ -300,6 +333,7 @@ footer {
     justify-content: center;
     align-items: center;
     font: 20px 'Berthold';
+    padding: 0 0 0 15%; ;
 }
 
 .red_2{
@@ -339,15 +373,10 @@ footer {
     }
 
 
-
-
-
-
-
 nav {
     position: absolute;
     z-index: 3;
-    font-size: 15px;
+    font: 15px 'Berthold';
 }
 
 
@@ -356,7 +385,6 @@ nav {
   width: 13%;
   z-index: 3;
   height: 100vh;
-  font-size: 10px;
   text-decoration: none;
   color: white;
 }
@@ -373,6 +401,10 @@ nav {
 .nav ul {
   list-style: none;
   text-decoration: none;
+}
+
+.nav ul li:active {
+    color: aqua;
 }
 
 a {
@@ -402,6 +434,8 @@ a:hover {
     margin-top: 0px;
     position: absolute;
 }
+
+
 
 
 

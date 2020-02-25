@@ -69,44 +69,69 @@ let now = new Date();
 
 
 
-var myVideo = document.getElementById("myVideo");
-myVideo.width = 420;
-myVideo.controls = true;
-var button = document.getElementById("button");
-function playPause() {
-  if (myVideo.paused) {
-    myVideo.play();
-    myVideo.controls = false;
-  }
-  else {
-    myVideo.pause();
-    myVideo.controls = true;
-} }
-button.addEventListener('click',mute);
-function makeBig() {
-    myVideo.width = 1000;
-}
-function mute() {
-  if (myVideo.muted) {
-    myVideo.muted = false;
-  }
-  else {
-    myvideo.muted = true;
-} }
-function makeSmall() {
-    myVideo.width = 200;
-}
+        var video = document.getElementById('myvideo'), fraction = 0.8;
 
-function makeNormal() {
-    myVideo.width = 420;
-}
+            function checkScroll() {
+                var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+                b = y + h, //bottom
+                visibleX, visibleY, visible;
 
-function mute() {
-    myVideo.muted = true;
-}
+                visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+                visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
 
-function orangeAmp () {
-    myvideo.muted = false;
-}
+                visible = visibleX * visibleY / (w * h);
+
+                if (visible > fraction) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            }
+
+            checkScroll();
+            window.addEventListener('scroll', checkScroll, false);
+            window.addEventListener('resize', checkScroll, false);
+
+
+
+        var carpets = [
+    "History & Use" + '<br>' + "Originally Persian carpets were used by nomadic people for private use as floor coverings, blankets or wall decorations. In trade, the carpets were made as decorative elements for palaces, mosques and houses of respected citizens of the old Persian Empire. This way they also found their way to european royal families and wealthy classes of the population who could afford a genuine Persian carpet." + '<p>' + '<br>' +
+
+    "Knots" + '<br>' + "Depending on the pattern and desired fineness, two types of knots are used: the symmetrical and the asymmetrical knot. Asymmetrically knotted carpets mainly depict figures and floral elements, while the Giordes knot is mostly used for geometric patterns." + '<p>' + '<br>' +
+
+    "Colours" + '<br>' + "To achieve the wonderful patterns of Persian carpets, different coloured yarns are needed. These can be dyed by hand and with natural or synthetic pigments. Again, natural dyes are more valuable. Probably the best known natural colour and usually the dominating colour in Persian carpets is madder red, which is obtained from the so-called dyer madder, which has its area of distribution in the Middle East and the eastern Mediterranean. In addition, blue is extracted from the indigo plant, which is now common as the basic colour of jeans, and yellow is often extracted from chamomile. Almost all nuances of the entire colour spectrum can be produced by mixing colours." + '<p>' + '<br>' +
+
+    "Patterns" + '<br>' + "Persian carpets can show the widest variety of patterns and are often characterized by the place of origin. Often there is a medallion in the middle, which builds up the carpet from the centre. However, a major part is often left to the creativity of the weaver." + '<p>',
+];
+
+document.getElementById("Info").innerHTML = carpets;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
