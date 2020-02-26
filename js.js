@@ -68,7 +68,6 @@ let now = new Date();
 
 
 
-
         var video = document.getElementById('myvideo'), fraction = 0.8;
 
             function checkScroll() {
