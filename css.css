@@ -37,7 +37,6 @@ header {
     z-index: 10;
     margin: 30px;
     left: 18px;
-
 }
 
 .background {
@@ -63,12 +62,14 @@ header {
     position: absolute;
     text-align: left;
     left: 25%;
-    top: 31%;
+    top: 42%;
     z-index: 3;
     font: 28px 'Berthold';
     color: #fff;
     animation-name: title_animation;
     animation-duration: 8s;
+    line-height: 1.25;
+    font-weight: 900;
 }
 
 @keyframes title_animation {
@@ -82,8 +83,11 @@ header {
 }
 
 .logo {
-    width: 70%;
-    margin-bottom: 20px;
+    width: 25%;
+    margin-left: 50px;
+    position: absolute;
+    z-index: 2;
+    top: 8%;
 }
 
 .arrow {
@@ -425,6 +429,7 @@ a {
 a:hover {
     color: darkgrey;
     left: 5px;
+    font-size: 18px;
 }
 
 .line {
