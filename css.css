@@ -80,6 +80,7 @@ header {
 .name {
      font: 160% 'Berthold';
     margin-top: 15px;
+    text-align: center;
 }
 
 .logo {
@@ -90,7 +91,7 @@ header {
     top: 8%;
 }
 
-.arrow {
+.arrow{
     position: absolute;
     text-align: center;
     left: 50%;
@@ -109,14 +110,137 @@ header {
           transform: translateY(0);
         }
         40% {
-          transform: translateY(-30px);
+          transform: translateY(-10px);
         }
         60% {
-          transform: translateY(-15px);
+          transform: translateY(-5px);
         }
       }
+.arrow_2{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    right: 50%;
+    top: 180%;
+    z-index: 3;
+    color: #fff;
+    width: 3%;
+    margin-left: -0.75%;
 
+        animation: bounce 2s infinite;
+      }
 
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
+.arrow_3{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    right: 50%;
+    top: 285%;
+    z-index: 3;
+    color: #fff;
+    width: 3%;
+    margin-left: -0.75%;
+
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
+.arrow_3_5{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    right: 50%;
+    top: 385%;
+    z-index: 3;
+    color: #fff;
+    width: 3%;
+    margin-left: -0.75%;
+
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
+.arrow_4{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    right: 50%;
+    top: 490%;
+    z-index: 3;
+    color: #fff;
+    width: 3%;
+    margin-left: -0.75%;
+
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
+.arrow_5{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    right: 50%;
+    top: 585%;
+    z-index: 3;
+    color: #fff;
+    width: 3%;
+    margin-left: -0.75%;
+
+        animation: bounce 2s infinite;
+      }
+
+      @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
 .second {
     height: 100vh;
     width: 100%;
@@ -159,6 +283,7 @@ header {
     width: 100%;
     padding: 4% 15%;
     background-color: #C7C4C4;
+    padding-top: 120px;
 }
 
 .facts {
@@ -388,9 +513,10 @@ nav {
   position: fixed;
   width: 13%;
   z-index: 3;
-  height: 100vh;
+  height: 230px;
   text-decoration: none;
   color: white;
+  top: 35%;
 }
 
 .nav {
@@ -433,16 +559,31 @@ a:hover {
 }
 
 .line {
-    height: 1000px;
     width: 3px;
-    margin-left: 10%;
+    margin-left: 20px;
     margin-top: 0px;
-    position: absolute;
+    position: fixed;
+  z-index: 3;
+  height: 100vh;
+  text-decoration: none;
+  color: white;
 }
 
 
+.quote{
+    text-align: center;
+}
 
+controls{
+    z-index: 2;
+}
 
-
+#button{
+    width: 100px;
+    z-index: 3;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
 
 
